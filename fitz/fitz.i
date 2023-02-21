@@ -7865,7 +7865,7 @@ def tobytes(self, output="png"):
         Bytes object.
     """
     EnsureOwnership(self)
-    valid_formats = {"png": 1, "pnm": 2, "pgm": 2, "ppm": 2, "pbm": 2,
+    valid_formats = {"png": 1, "jpg": 1, "jpeg":1, "pnm": 2, "pgm": 2, "ppm": 2, "pbm": 2,
                      "pam": 3, "tga": 4, "tpic": 4,
                      "psd": 5, "ps": 6}
     idx = valid_formats.get(output.lower(), 1)
